@@ -92,7 +92,11 @@ body {
   color: white;
   margin: 10px 0;
 }
-
+/* beautify numeric characters */
+#show-time,
+span.bold {
+  font-variant-numeric: lining-nums;
+}
 .green {
   color: #9dffad;
 }
