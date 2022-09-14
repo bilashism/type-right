@@ -162,6 +162,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
   padding: 20px 30px;
   color: white;
   border-radius: 15px;
@@ -200,3 +201,14 @@ button {
     flex-direction: column;
   }
 }
+/*#region - start of - extra large (1200px) devices */
+@media screen and (min-width: 1200px) {
+  #histories {
+    justify-content: space-between;
+  }
+  #histories .card {
+    width: calc((100% / 3) - (2rem / 1.5));
+    flex-direction: column;
+  }
+}
+/*#endregion - end of - extra large (1200px) devices */
