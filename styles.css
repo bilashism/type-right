@@ -14,7 +14,8 @@ body {
 }
 
 .box-container {
-  width: 70%;
+  padding: 0 20px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -174,6 +175,7 @@ button {
   height: 100%;
   padding: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
@@ -188,6 +190,7 @@ button {
   );
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
+  text-align: center;
 }
 
 #modal-background {
@@ -205,20 +208,11 @@ button {
   top: 0;
 }
 
-@media only screen and (max-width: 700px) {
-  .box-container {
-    padding: 0 20px;
-    width: 100%;
-  }
-  .card {
-    flex-direction: column;
-  }
-}
 /*#region - start of - extra large (1200px) devices */
 @media screen and (min-width: 1200px) {
-  /* #histories {
-    justify-content: space-between;
-  } */
+  .box-container {
+    max-width: 1160px;
+  }
   #histories .card {
     width: calc((100% / 3) - (2rem / 1.5));
     flex-direction: column;
