@@ -98,7 +98,8 @@ body {
 }
 /* beautify numeric characters */
 #show-time,
-span.bold {
+span.bold,
+#countdown h1 {
   font-variant-numeric: lining-nums;
 }
 .green {
