@@ -70,7 +70,7 @@ const validate = key => {
 };
 
 // calculate writing speed in WPM (Word Per Minute)
-const speedInWpm = (chars, seconds) => (chars / 5 / (seconds / 60)).toFixed(2);
+const speedInWpm = (chars, seconds) => parseInt(chars / 5 / (seconds / 60));
 
 // FINISHED TYPING
 const gameOver = () => {
