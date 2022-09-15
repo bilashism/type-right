@@ -109,6 +109,7 @@ const gameOver = () => {
 const closeModal = () => {
   modalBackground.classList.toggle("hidden");
   resultModal.classList.toggle("hidden");
+  document.getElementById("show-time").innerHTML = `0 seconds`;
 };
 
 const start = () => {
@@ -117,10 +118,8 @@ const start = () => {
 
   let count = 3;
   countdownOverlay.style.display = "flex";
-
   const startCountdown = setInterval(() => {
     countdownOverlay.innerHTML = `<h1>${count}</h1>`;
-
     // finished timer
     if (count == 0) {
       // -------------- START TYPING -----------------
@@ -130,6 +129,7 @@ const start = () => {
 
       clearInterval(startCountdown);
       startTime = new Date().getTime();
+      countdownOverlay.innerHTML = ``;
     }
     count--;
   }, 1000);
