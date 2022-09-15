@@ -11,6 +11,7 @@ body {
   background-image: url("./bg.png");
   background-size: cover;
   background-position: left top;
+  background-attachment: fixed;
   font-family: "Zilla Slab", serif;
 }
 
@@ -19,7 +20,20 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-
+.navbar {
+  text-align: right;
+}
+.navbar a {
+  color: #9dffad;
+  text-decoration: none;
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem);
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-property: color;
+}
+.navbar a:hover {
+  color: #c3ff9d;
+}
 #question {
   min-height: 100px;
   padding: 0.75rem;
