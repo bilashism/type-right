@@ -18,5 +18,81 @@
     <h1 class="title">
       <a href="index.html"><img src="./logo.png" alt="logo" /></a>
     </h1>
+
+    <main>
+      <div class="box-container">
+        <div class="articles-container">
+          <!--#region - start of - single blog article -->
+          <article class="single-blog-article">
+            <h2 class="article-title">
+              What is the difference between <code>localStorage</code> and
+              <code>sessionStorage</code>?
+            </h2>
+            <p class="article-description">
+              The <code>localStorage</code> and <code>sessionStorage</code> are
+              similar in every aspects but the <code>sessionStorage</code> is
+              temporary and it gets cleared after the closing of the tab or
+              browser window. Whereas the <code>localStorage</code> is
+              persistent and it stays even after the closing of the tab or
+              browser window.
+            </p>
+          </article>
+          <!--#endregion - end of - single blog article -->
+          <!--#region - start of - single blog article -->
+          <article class="single-blog-article">
+            <h2 class="article-title">
+              What is the difference between <code>Global</code> and
+              <code>Local</code> scope?
+            </h2>
+            <p class="article-description">
+              <code>Global</code> scope means it can be accessed from anywhere
+              in your JavaScript code. <code>Global</code> scope is defined
+              outside the function. <br />
+              <code>Local</code> scope means it can be accessed from only within
+              the scope from where it is defined. <code>Local</code> scope is
+              defined inside a function.
+            </p>
+          </article>
+          <!--#endregion - end of - single blog article -->
+          <!--#region - start of - single blog article -->
+          <article class="single-blog-article">
+            <h2 class="article-title">What is event loop in JavaScript?</h2>
+            <p class="article-description">
+              The event loop is a mechanism that allows JavaScript to perform
+              non-blocking operations with the help of browser APIs. There is a
+              <i>heap</i> and a <i>call stack</i>. The <i>heap</i> is for memory
+              management and the <i>call stack</i> is for managing all the
+              operations. Whenever a function is finished, it is popped from the
+              stack. The <i>event queue</i> is responsible for sending new
+              functions to the stack for processing.
+            </p>
+          </article>
+          <!--#endregion - end of - single blog article -->
+          <!--#region - start of - single blog article -->
+          <article class="single-blog-article">
+            <h2 class="article-title">
+              How many ways to get <code>undefined</code> in JavaScript?
+            </h2>
+            <p class="article-description">
+              The <code>undefined</code> type is a type whose sole value is the
+              <code>undefined</code> value.
+              <br />
+              A declared variable but not yet assigned with a value
+              (uninitialized) is by default <code>undefined</code>.
+              <br />
+              If we try to access non-existing <code>object</code> properties
+              then we will get <code>undefined</code>.
+              <br />
+              If we try to access non-existing <code>array</code> elements then
+              we will get <code>undefined</code>.
+              <br />
+              <code>undefined</code> is returned as the default value of a
+              <code>function</code> if nothing is returned explicitly.
+            </p>
+          </article>
+          <!--#endregion - end of - single blog article -->
+        </div>
+      </div>
+    </main>
   </body>
 </html>
